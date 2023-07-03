@@ -43,6 +43,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
 });
 
+$routes->resource('post');
 
 
 /*
